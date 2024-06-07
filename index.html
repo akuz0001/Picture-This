@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE <html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,11 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>
+      <source media="(max-width:959px)" srcset="images/museum-480_x_480.jpg, images/museum-640_x_640.jpg, images/museum-800_x_800.jpg">
+      <source media="(min-width:960px)" srcset="images/museum-480_x_480.jpg, images/museum-640_x_640.jpg, images/museum-800_x_800.jpg">
+      <img src="images/museum.jpg" alt="placeholder">
+    </picture>
 
   </header>
 </body>
